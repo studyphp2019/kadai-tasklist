@@ -12,6 +12,9 @@
             max-width: 1000px;
             margin: 100px auto 0;
         }
+        .btn-toolbar a {
+            margin: 0 5px;
+        }
     </style>
 </head>
 <body>

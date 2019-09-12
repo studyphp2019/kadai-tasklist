@@ -19,6 +19,7 @@
                     
                     <td>
                         <div class="btn-toolbar">
+                        {!! link_to_route('tasks.show', 'もっと見る', ['id' => $task->id], ['class' => 'btn btn-primary btn-info']) !!}
                         {!! link_to_route('tasks.edit', '編集', ['id' => $task->id], ['class' => 'btn btn-primary btn-light']) !!}
                         {!! Form::model($task, ['route' => ['tasks.destroy', $task->id], 'method' => 'delete']) !!}
                         {!! Form::submit('削除', ['class' => 'btn btn-primary btn-danger']) !!}
