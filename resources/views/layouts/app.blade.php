@@ -18,9 +18,11 @@
     </style>
 </head>
 <body>
+    
     <div class="wrap">
+            @include('commons.error_messages')
+
             @yield('content')
-        
     </div>
             
             

@@ -9,10 +9,12 @@
     <table class="table table-bordered">
         <tr>
             <th>id</th>
-            <td>{{ $task->id }}</td>
+            <th>ステータス</th>
+            <th>タスク内容</th>
         </tr>
         <tr>
-            <th>タスク内容</th>
+            <td>{{ $task->id }}</td>
+            <td>{{ $task->status }}</td>
             <td>{{ $task->content }}</td>
         </tr>
     </table>
