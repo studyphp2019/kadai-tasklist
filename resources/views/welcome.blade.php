@@ -2,7 +2,7 @@
 
 @section('content')
     @if (Auth::check())
-        {{ Auth::user()->name }}
+        <h1>{{ Auth::user()->name }} <small class="text-muted">'s tasks</small></h1>
         
         @include('tasks.tasks', ['tasks' => $tasks])
         
